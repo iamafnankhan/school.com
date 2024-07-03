@@ -96,7 +96,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
 
 
 </body>
