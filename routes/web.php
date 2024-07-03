@@ -15,14 +15,15 @@ Route::get('logout', [AuthController::class,'logout']);
 Route::get('/admin/list', function () {
     return view('Admin/admin/list');
 });
+  Route::get('/dashboard', function () {
+            return view('Admin/dashboard');
+        });
 
 
 
 Route::group(['middleware' => 'auth'], function () {
     Route::group(['middleware' => 'admin'], function () {
-        Route::get('/dashboard', function () {
-            return view('Admin/dashboard');
-        });
+
     });
 
 Route::group(['middleware' => 'teacher'],function(){

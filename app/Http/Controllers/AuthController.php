@@ -14,22 +14,21 @@ class AuthController extends Controller
         // dd(Hash::make(123456));
         if (Auth::check()) {
             $user = Auth::user();
-            switch ($user->user_type) {
-                case 1:
-                    return redirect('/dashboard');
-                case 2:
-                    return redirect('/teacher/dashboard');
-                case 3:
-                    return redirect('/student/dashboard');
-                case 4:
-                    return redirect('/parent/dashboard');
-                default:
-                    return redirect('/dashboard'); // fallback
+            if ($user->user_type == 1) {
+                return redirect('/dashboard');
+            } elseif ($user->user_type == 2) {
+                return redirect('/teacher/dashboard');
+            } elseif ($user->user_type == 3) {
+                return redirect('/student/dashboard');
+            } elseif ($user->user_type == 4) {
+                return redirect('/parent/dashboard');
+            } else {
+                return redirect('/dashboard'); // fallback if user_type is not recognized
             }
         }
         return view('auth.login');
-
     }
+
 
 
 
@@ -61,5 +60,4 @@ class AuthController extends Controller
         Auth::logout();
         return redirect(url(''));
     }
-
 }
