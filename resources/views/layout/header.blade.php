@@ -1,4 +1,10 @@
   <!-- Navbar -->
+  <head>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -190,6 +196,17 @@
               <i class="nav-icon far fa-user"></i>
               <p>
                 Admin
+
+              </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{{url ('logout')}}" class="nav-link">
+                <i class="nav-icon fa fa-sign-out"></i>
+
+                <p>
+                Logout
 
               </p>
             </a>

@@ -38,8 +38,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>1.</td>
+                    <tr>                      <td>1.</td>
                       <td>Update software</td>
                       <td>
                         <div class="progress progress-xs">

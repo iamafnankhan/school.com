@@ -7,48 +7,43 @@ use App\Http\Controllers\AuthController;
 //     return view('auth.login');
 // });
 
-Route::get('/', [AuthController::class,'login']);
-Route::post('login', [AuthController::class,'AuthLogin']);
-Route::get('logout', [AuthController::class,'logout']);
+Route::get('/', [AuthController::class, 'login']);
+Route::post('login', [AuthController::class, 'AuthLogin']);
+Route::get('logout', [AuthController::class, 'logout']);
+
+
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+
+});
+
+Route::get('/dashboard', function () {
+    return view('teacher/dashboard');
+});
+
+
+Route::get('/dashboard', function () {
+    return view('student/dashboard');
+});
+
+
+
+
+Route::get('/dashboard', function () {
+    return view('parent/dashboard');
+});
+
+
+
+
 
 
 Route::get('/admin/list', function () {
     return view('Admin/admin/list');
 });
-  Route::get('/dashboard', function () {
-            return view('Admin/dashboard');
-        });
 
 
-
-Route::group(['middleware' => 'auth'], function () {
-    Route::group(['middleware' => 'admin'], function () {
-
-    });
-
-Route::group(['middleware' => 'teacher'],function(){
-
-    Route::get('/dashboard', function () {
-        return view('teacher/dashboard');
-    });
-});
-
-Route::group(['middleware' => 'student'],function(){
-
-    Route::get('/dashboard', function () {
-        return view('student/dashboard');
-    });
-});
-
-Route::group(['middleware' => 'parent'],function(){
-
-    Route::get('/dashboard', function () {
-        return view('parent/dashboard');
-    });
-});
-
-
-});
 
 
 

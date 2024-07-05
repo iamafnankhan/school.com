@@ -15,7 +15,7 @@ class AuthController extends Controller
         if (Auth::check()) {
             $user = Auth::user();
             if ($user->user_type == 1) {
-                return redirect('/dashboard');
+                return redirect('/admin/dashboarddashboard');
             } elseif ($user->user_type == 2) {
                 return redirect('/teacher/dashboard');
             } elseif ($user->user_type == 3) {
@@ -23,7 +23,7 @@ class AuthController extends Controller
             } elseif ($user->user_type == 4) {
                 return redirect('/parent/dashboard');
             } else {
-                return redirect('/dashboard'); // fallback if user_type is not recognized
+                return redirect('/admin/dashboard'); // fallback if user_type is not recognized
             }
         }
         return view('auth.login');
@@ -39,7 +39,7 @@ class AuthController extends Controller
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $remember)) {
             $user = Auth::user();
             if ($user->user_type == 1) {
-                return redirect('/dashboard');
+                return redirect('/admin/dashboard');
             } elseif ($user->user_type == 2) {
                 return redirect('/teacher/dashboard');
             } elseif ($user->user_type == 3) {
@@ -47,7 +47,7 @@ class AuthController extends Controller
             } elseif ($user->user_type == 4) {
                 return redirect('/parent/dashboard');
             } else {
-                return redirect('/dashboard'); // fallback if user_type is not recognized
+                return redirect('/admin/dashboard'); // fallback if user_type is not recognized
             }
         } else {
             return redirect()->back()->with('error', 'Please enter Valid Email and Password.');
