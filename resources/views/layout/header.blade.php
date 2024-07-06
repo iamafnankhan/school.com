@@ -191,15 +191,17 @@
               </p>
             </a>
         </li>
-        <li class="nav-item">
-            <a href="{{url ('/admin/list')}}" class="nav-link">
-              <i class="nav-icon far fa-user"></i>
-              <p>
-                Admin
 
-              </p>
+        <li class="nav-item">
+            @if (Auth::user()->user_type == 1)
+        <!-- Display admin-related links for user type id 1 -->
+        <li class="nav-item">
+            <a href="{{ url('/admin/list') }}" class="nav-link">
+                <i class="nav-icon far fa-user"></i>
+                <p>Admin</p>
             </a>
         </li>
+    @endif
 
         <li class="nav-item">
             <a href="{{url ('logout')}}" class="nav-link">
