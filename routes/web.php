@@ -18,20 +18,20 @@ Route::get('/admin/dashboard', function () {
 
 });
 
-Route::get('/dashboard', function () {
-    return view('teacher/dashboard');
+Route::get('teacher/dashboard', function () {
+    return view('teacher.dashboard');
 });
 
 
-Route::get('/dashboard', function () {
-    return view('student/dashboard');
+Route::get('student/dashboard', function () {
+    return view('student.dashboard');
 });
 
 
 
 
-Route::get('/dashboard', function () {
-    return view('parent/dashboard');
+Route::get('parent/dashboard', function () {
+    return view('parent.dashboard');
 });
 
 
