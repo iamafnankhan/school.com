@@ -37,7 +37,11 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
+<<<<<<< HEAD
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circ le-right"></i></a>
+=======
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
             </div>
           </div>
           <!-- ./col -->
@@ -154,7 +158,11 @@
                       <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
+<<<<<<< HEAD
                     <img class="direct-chat-img" src="/dist/img/afnan.jpg" alt="message user image">
+=======
+                    <img class="direct-chat-img" src="/dist/img/user1-128x128.jpg" alt="message user image">
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       Is this template really for free? That's unbelievable!
@@ -186,7 +194,11 @@
                       <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
+<<<<<<< HEAD
                     <img class="direct-chat-img" src="/dist/img/afnan.jpg" alt="message user image">
+=======
+                    <img class="direct-chat-img" src="/dist/img/user1-128x128.jpg" alt="message user image">
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       Working with AdminLTE on a great new app! Wanna join?
@@ -466,9 +478,15 @@
                 </ul>
               </div>
               <!-- /.card-body -->
+<<<<<<< HEAD
               {{-- <div class="card-footer clearfix">
                 <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Add item</button>
               </div> --}}
+=======
+              <div class="card-footer clearfix">
+                <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Add item</button>
+              </div>
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
             </div>
             <!-- /.card -->
           </section>
@@ -476,7 +494,11 @@
           <!-- right col (We are only adding the ID to make the widgets sortable)-->
           <section class="col-lg-5 connectedSortable">
 
+<<<<<<< HEAD
             {{-- <!-- Map card -->
+=======
+            <!-- Map card -->
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
             <div class="card bg-gradient-primary">
               <div class="card-header border-0">
                 <h3 class="card-title">
@@ -518,11 +540,19 @@
                 </div>
                 <!-- /.row -->
               </div>
+<<<<<<< HEAD
             </div> --}}
             <!-- /.card -->
 
             <!-- solid sales graph -->
             {{-- <div class="card bg-gradient-info">
+=======
+            </div>
+            <!-- /.card -->
+
+            <!-- solid sales graph -->
+            <div class="card bg-gradient-info">
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
               <div class="card-header border-0">
                 <h3 class="card-title">
                   <i class="fas fa-th mr-1"></i>
@@ -569,11 +599,19 @@
                 <!-- /.row -->
               </div>
               <!-- /.card-footer -->
+<<<<<<< HEAD
             </div> --}}
             <!-- /.card -->
 
             <!-- Calendar -->
             {{-- <div class="card bg-gradient-success">
+=======
+            </div>
+            <!-- /.card -->
+
+            <!-- Calendar -->
+            <div class="card bg-gradient-success">
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
               <div class="card-header border-0">
 
                 <h3 class="card-title">
@@ -609,7 +647,11 @@
                 <div id="calendar" style="width: 100%"></div>
               </div>
               <!-- /.card-body -->
+<<<<<<< HEAD
             </div> --}}
+=======
+            </div>
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
             <!-- /.card -->
           </section>
           <!-- right col -->

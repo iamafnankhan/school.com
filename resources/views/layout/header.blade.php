@@ -12,7 +12,11 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
+<<<<<<< HEAD
         <a href="/admin/dashboard" class="nav-link">Home</a>
+=======
+        <a href="/dashboard" class="nav-link">Home</a>
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -22,7 +26,11 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
+<<<<<<< HEAD
       {{-- <li class="nav-item">
+=======
+      <li class="nav-item">
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">
           <i class="fas fa-search"></i>
         </a>
@@ -41,7 +49,11 @@
             </div>
           </form>
         </div>
+<<<<<<< HEAD
       </li> --}}
+=======
+      </li>
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
 
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
@@ -155,7 +167,11 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
+<<<<<<< HEAD
             <img src="/dist/img/afnan.jpg" class="img-circle elevation-2" alt="User Image">
+=======
+            <img src="\storage\afnan.png" class="img-circle elevation-2" alt="User Image">
+>>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
 
         </div>
         <div class="info">
