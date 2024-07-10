@@ -37,11 +37,8 @@
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-<<<<<<< HEAD
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circ le-right"></i></a>
-=======
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
->>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
             </div>
           </div>
           <!-- ./col -->

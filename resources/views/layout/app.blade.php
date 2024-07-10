@@ -3,12 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
   <title>School CMS</title>
-=======
   <title>AdminLTE 3 | Dashboard</title>
->>>>>>> 98f650ebcab3fbc6ffd844e01fb0b56d63220bb5
-  <link rel="icon" href="\dist\favicon\tick.png" type="image/x-icon">
+  <link rel="icon" href="/dist/favicon/tick.png" type="image/x-icon">
 
 
   <!-- Google Font: Source Sans Pro -->

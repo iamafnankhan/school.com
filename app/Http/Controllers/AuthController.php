@@ -67,14 +67,23 @@ class AuthController extends Controller
 
     public function forgotpassword(Request $request)
     {
-        return view ('auth.forgot_password');
+        return view('auth.forgot_password');
     }
 
     public function PostForgotPassword(Request $request)
     {
-       $checkEmail = User::getEmailCheck($request->email); 
+        $checkEmail = User::getEmailCheck($request->email);
+        //    dd($checkEmail); 
+            if(!empty($user))
+        {
+
+        }
+        else
+        {
+            return redirect()->back()->with('error',"Email not found in the database");
+        }   
     }
-    
+
 
     public function logout()
     {
