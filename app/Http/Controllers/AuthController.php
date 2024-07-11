@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
-// use Hash;
-// use Illuminate\Support\Facades\Auth;
-// use Illuminate\Support\Facades\Hash;
+use App\Mail\ForgotPasswordMail;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
+
 
 
 class AuthController extends Controller
@@ -74,14 +75,16 @@ class AuthController extends Controller
     {
         $checkEmail = User::getEmailCheck($request->email);
         //    dd($checkEmail); 
-            if(!empty($user))
-        {
+        if (!empty($user)) {
+            $user->remember_token = Str::random(30);
+            $user->save();
 
+            Mail::to($user->email)->send(new ForgotPasswordMail($user));
+
+            return redirect()->back()->with('Success', "Check Your Email and Reset Your Password");
+        } else {
+            return redirect()->back()->with('error', "Email not found in the database");
         }
-        else
-        {
-            return redirect()->back()->with('error',"Email not found in the database");
-        }   
     }
 
 
