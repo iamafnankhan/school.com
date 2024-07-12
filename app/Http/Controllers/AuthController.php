@@ -88,9 +88,15 @@ class AuthController extends Controller
         }
     }
 
-    public function reset($token)
+    public function reset($remember_token)
     {
-        dd($token);
+        $user = User::getTokenSingle($remember_token);
+        if (!empty($user)) {
+            $data['user']= $user;
+            return view('auth.reset', $data);
+        } else {
+            abort(404);
+        }
     }
 
     public function logout()

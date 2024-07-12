@@ -12,7 +12,7 @@ Route::post('login', [AuthController::class, 'AuthLogin']);
 Route::get('logout', [AuthController::class, 'logout']);
 Route::get(' forgot-password', [AuthController::class, 'forgotpassword']);
 Route::post(' forgot-password', [AuthController::class, 'PostForgotPassword']);
-Route::get('/reset/{token}', [AuthController::class, 'reset']);
+Route::get('reset/{token}', [AuthController::class, 'reset']);
 
 
 
