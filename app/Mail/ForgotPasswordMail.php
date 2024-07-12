@@ -37,12 +37,16 @@ class ForgotPasswordMail extends Mailable
     /**
      * Get the message content definition.
      */
-    public function content(): View
+    public function content(): Content
     {
-        $user = auth()->user(); // Example of how you might retrieve the user
-        return view('emails.forgot', [
-            'user' => $user,
-        ]);
+        return new Content(
+            markdown: 'emails.forgot',
+            with: [
+                'user' => $this->user,
+            ],
+
+
+        );
     }
 
     /**

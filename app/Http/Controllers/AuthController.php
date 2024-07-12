@@ -71,22 +71,27 @@ class AuthController extends Controller
         return view('auth.forgot_password');
     }
 
+
     public function PostForgotPassword(Request $request)
     {
-        $checkEmail = User::getEmailCheck($request->email);
-        //    dd($checkEmail); 
-        if (!empty($user)) {
+        $user = User::where('email', $request->email)->first();
+
+        if ($user) {
             $user->remember_token = Str::random(30);
             $user->save();
 
             Mail::to($user->email)->send(new ForgotPasswordMail($user));
 
-            return redirect()->back()->with('Success', "Check Your Email and Reset Your Password");
+            return redirect()->back()->with('success', "Check your email to reset your password.");
         } else {
-            return redirect()->back()->with('error', "Email not found in the database");
+            return redirect()->back()->with('error', "Email not found in the database.");
         }
     }
 
+    public function reset($token)
+    {
+        dd($token);
+    }
 
     public function logout()
     {

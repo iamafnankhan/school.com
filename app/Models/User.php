@@ -45,7 +45,7 @@ class User extends Authenticatable
         ];
     }
 
-    static function getEmailCheck($email) 
+   public  static function getEmailCheck($email) 
      {
         return User::where ('email' ,'=', $email)->first();
         
